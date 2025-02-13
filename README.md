@@ -1,0 +1,1 @@
+# ALGOLINC project
