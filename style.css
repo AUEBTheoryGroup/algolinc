@@ -1,0 +1,143 @@
+:root {
+    --primary-color: #1e1e2f; /* Blueish */
+    --secondary-color: #ff4757; /* Reddish */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    display: flex;
+    max-width: 1400px;
+    width: 100%;
+    margin: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.sidebar {
+    background: var(--primary-color);
+    color: white;
+    padding: 30px;
+    width: 20%;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pushes the institution text to the bottom */
+    box-shadow: rgba(30, 30, 47, 0.4) 5px 5px, rgba(30, 30, 47, 0.3) 10px 10px, rgba(30, 30, 47, 0.2) 15px 15px, rgba(30, 30, 47, 0.1) 20px 20px, rgba(30, 30, 47, 0.05) 25px 25px;
+}
+.sidebar h1 {
+    font-size: xx-large;
+    margin-bottom: 10px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+.badge {
+    background: var(--secondary-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+.content {
+    padding: 40px;
+    flex-grow: 1;
+    width: 75%;
+    overflow-y: auto;
+    margin-left: 27%;
+}
+
+.content h2 {
+    font-size: xx-large;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+.content h3 {
+    font-size: x-large;
+    margin-top: 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.content h4 {
+    font-size: large;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.content p {
+    line-height: 1.6;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.badge a {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    text-decoration: underline;
+}
+
+.badge a:hover {
+    text-decoration: none;
+}
+
+.badge:hover {
+    background: #ef3847;
+}
+
+.institution {
+    margin-top: auto; /* Pushes the institution text to the bottom */
+    font-size: medium;
+    opacity: 0.8;
+    margin-bottom: 45px;
+}
+
+.institution a {
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+.container {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.sidebar {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    position: relative; 
+    height: auto;
+    overflow-y: auto;
+    box-shadow: none;
+}
+.content {
+    width: 100%; 
+    padding: 0;
+    margin-left: 0;
+}
+
+.content > * {
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.content > p {
+    margin: 0;
+}
+}
