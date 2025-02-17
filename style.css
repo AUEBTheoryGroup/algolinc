@@ -77,7 +77,7 @@ body {
     line-height: 1.6;
 }
 
-.people ul {
+.people li {
     list-style-type: none;
     margin-left: -40px;
 }
