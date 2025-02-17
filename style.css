@@ -15,8 +15,8 @@ body {
 }
 .container {
     display: flex;
-    max-width: 1400px;
-    width: 100%;
+    max-width: 95vw;
+    /* width: 100vw; */
     margin: 20px;
     background: white;
     border-radius: 10px;
@@ -27,7 +27,7 @@ body {
     background: var(--primary-color);
     color: white;
     padding: 30px;
-    width: 20%;
+    width: 20vw;
     position: fixed;
     height: 100vh;
     top: 0;
@@ -51,9 +51,9 @@ body {
 .content {
     padding: 40px;
     flex-grow: 1;
-    width: 75%;
+    width: 75vw;
     overflow-y: auto;
-    margin-left: 27%;
+    margin-left: 25vw;
 }
 
 .content h2 {
