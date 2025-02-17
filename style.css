@@ -77,6 +77,11 @@ body {
     line-height: 1.6;
 }
 
+.people ul {
+    list-style-type: none;
+    margin-left: -40px;
+}
+
 a {
     color: var(--secondary-color);
     text-decoration: none;
