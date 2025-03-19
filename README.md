@@ -1,3 +1,3 @@
 # ALGOLINC project
 
-https://auebtheorygroup.github.io/algolinc/
+This repository hosts the <a href="https://auebtheorygroup.github.io/algolinc/" target="_blank">website</a> for the ALGOLINC project.
