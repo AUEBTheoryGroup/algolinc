@@ -64,6 +64,7 @@ body {
 }
 .content h3 {
     font-size: x-large;
+    border-bottom: 1px solid gainsboro;
     margin-top: 20px;
     font-family: 'Trebuchet MS', sans-serif;
 }
@@ -75,11 +76,13 @@ body {
 
 .content p {
     line-height: 1.6;
+    text-align: justify;
 }
 
-.people li {
-    list-style-type: none;
-    margin-left: -40px;
+li {
+    /* list-style-type: none;
+    margin-left: -40px; */
+    line-height: 1.6;
 }
 
 a {
@@ -144,4 +147,5 @@ a:hover {
 
 .content > p {
     margin: 0;
+}
 }
