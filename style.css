@@ -58,7 +58,7 @@ body {
 
 .content h2 {
     font-size: xx-large;
-    border-bottom: 2px solid var(--secondary-color);
+    /* border-bottom: 2px solid var(--secondary-color); */
     padding-bottom: 10px;
     font-family: 'Trebuchet MS', sans-serif;
 }
@@ -117,6 +117,25 @@ a:hover {
 .institution a {
     color: white;
 }
+
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    border-bottom: 2px solid var(--secondary-color); 
+}
+
+.hfri-logo {
+    max-height: 60px;
+    width: auto;
+}
+
+.page-header h2 {
+    margin: 0;
+}
+
 
 
 @media (max-width: 768px) {
